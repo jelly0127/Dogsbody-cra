@@ -3,11 +3,6 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  },
   plugins: [react(), reactRefresh()],
   css: {
     // 开启 css 的 SourceMap
