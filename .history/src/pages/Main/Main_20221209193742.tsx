@@ -1,3 +1,4 @@
+import React from 'react'
 import { ConfigProvider, Button, theme, message } from 'antd'
 import 'antd/dist/reset.css'
 import { Link } from 'react-router-dom'
