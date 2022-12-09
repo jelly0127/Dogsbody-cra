@@ -33,7 +33,7 @@ axios.interceptors.response.use(
     return response
   },
   (error) => {
-    console.log('error', error)
+    console.log('error-------', error)
 
     message.error(`请求出错：${error}`)
   }

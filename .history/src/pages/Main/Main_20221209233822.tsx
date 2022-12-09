@@ -16,15 +16,14 @@ export default function Main() {
           }
         }}
       >
-        <Button onClick={() => message.success('全局提示信息')}>test</Button>
+        <Button onClick={() => message.success('test提示信息')}>test</Button>
       </ConfigProvider>
       <Link to={'/'}>black</Link>
 
       <button
         onClick={() => {
           getData({ id: 888 })
-            .then((res: any) => {
-              setData(res.name)
+            .then((res) => {
               console.log(res)
               message.success('getDataSuccess!')
             })
@@ -35,8 +34,7 @@ export default function Main() {
       >
         Http
       </button>
-      <br />
-      <h3>{data}</h3>
+      <h3></h3>
     </>
   )
 }

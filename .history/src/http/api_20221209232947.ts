@@ -10,6 +10,7 @@ export const getData = (id: any) => {
         resolve(res)
       },
       (error) => {
+        console.log('网络异常~', error)
         reject(error)
       }
     )
