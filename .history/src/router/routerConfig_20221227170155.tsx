@@ -18,12 +18,15 @@ const lazyFactory = (
   )
 }
 //使用定义的懒加载
+const LazyMain = lazyFactory(Main)
+const LazyHome = lazyFactory(Home)
+const LazyHistory = lazyFactory(History)
 
 //路由路径的基本配置
 export const routes: RouteObject[] = [
   { path: '/', element: lazyFactory(Home) },
-  { path: '/main', element: lazyFactory(Main) },
-  { path: '/History', element: lazyFactory(History) }
+  { path: '/main', element: LazyMain },
+  { path: '/History', element: LazyHistory }
 ]
 //导出
 export default routes

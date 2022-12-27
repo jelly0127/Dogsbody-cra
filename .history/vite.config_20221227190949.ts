@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 
-export default defineConfig(({ mode }: ConfigEnv) => {
+export default defineConfig(({ command, mode }: ConfigEnv) => {
+  console.log(mode, command)
   const env = loadEnv(mode, __dirname)
-
   return {
     base: env.VITE_RES_URL,
     plugins: [react(), reactRefresh()],

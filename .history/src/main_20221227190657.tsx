@@ -12,7 +12,6 @@ console.log(import.meta.env)
 
 // title
 console.log(import.meta.env.VITE_APP_TITLE)
-console.log(import.meta.env.VITE_APP_BASE_API)
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

@@ -7,12 +7,11 @@ import store from './redux/store'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Routes } from 'react-router-dom'
 
-// base api
-console.log(import.meta.env)
-
-// title
-console.log(import.meta.env.VITE_APP_TITLE)
-console.log(import.meta.env.VITE_APP_BASE_API)
+console.log(' import.meta.env.MODE: ', import.meta.env.MODE)
+console.log(' import.meta.env.BASE_URl', import.meta.env.BASE_URL)
+console.log(' import.meta.env.PROD: ', import.meta.env.PROD)
+console.log(' import.meta.env.DEV: ', import.meta.env.DEV)
+console.log(' import.meta.env.SSR: ', import.meta.env.SSR)
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 
-export default defineConfig(({ mode }: ConfigEnv) => {
-  const env = loadEnv(mode, __dirname)
+export default defineConfig(({ command, mode }: ConfigEnv) => {
+  console.log(mode, command)
 
   return {
-    base: env.VITE_RES_URL,
+    base: '/test',
     plugins: [react(), reactRefresh()],
     css: {
       // 开启 css 的 SourceMap

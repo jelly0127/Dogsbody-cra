@@ -1,13 +1,17 @@
-import { ConfigEnv, defineConfig, loadEnv } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import reactRefresh from '@vitejs/plugin-react-refresh'
+export default ({ mode }) => {
+  const env = loadEnv(mode, process.cwd())
+  console.log(mode, env.VITE_APP_TITLE)
 
-export default defineConfig(({ mode }: ConfigEnv) => {
-  const env = loadEnv(mode, __dirname)
-
-  return {
-    base: env.VITE_RES_URL,
+  return defineConfig({
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    },
     plugins: [react(), reactRefresh()],
     css: {
       // 开启 css 的 SourceMap
@@ -29,5 +33,5 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         }
       }
     }
-  }
-})
+  })
+}

@@ -8,12 +8,12 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Routes } from 'react-router-dom'
 
 // base api
-console.log(import.meta.env)
-
 // title
-console.log(import.meta.env.VITE_APP_TITLE)
+console.log(import.meta.env.VITE_HELLO)
+console.log(import.meta.env.BASE_URL)
 console.log(import.meta.env.VITE_APP_BASE_API)
 
+console.log(' process.env: ', process.env)
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
