@@ -1,0 +1,162 @@
+import { createGlobalStyle } from 'styled-components'
+
+// const GlobalStyle = createGlobalStyle`
+//   html {
+//     height: 100%;
+//     font-size: 16px;
+//   }
+//   #root{
+//   background-color: #242424;
+//   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+//   font-size: 16px;
+//   line-height: 24px;
+//   font-weight: 400;
+//   color-scheme: light dark;
+//   color: rgba(255, 255, 255, 0.87);
+//   font-synthesis: none;
+//   text-rendering: optimizeLegibility;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-text-size-adjust: 100%;
+//   display: flex;
+//   justify-content: center;
+//   }
+
+//   body {
+//   max-width: 1280px;
+//  max-height: 100vh;
+//  /* display: flex;
+//  justify-content: center; */
+//   }
+
+//   body, textarea, input, button {
+//     line-height: 1;
+//   }
+
+//   body, div, p {
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   button, a {
+//     padding: 0;
+//     margin: 0;
+//     border: 0;
+//     background: transparent;
+
+//   }
+
+//   a {
+//     color: inherit;
+//     text-decoration: none;
+//     :focus {
+//       outline: none;
+//     }
+//   }
+
+//   img {
+//     display: block;
+//   }
+
+//   strong {
+//     font-weight: bold;
+//   }
+//   button {
+//   border-radius: 8px;
+//   border: 1px solid transparent;
+//   padding: 0.6em 1.2em;
+//   font-size: 1em;
+//   font-weight: 500;
+//   font-family: inherit;
+//   background-color: #1a1a1a;
+//   cursor: pointer;
+//   transition: border-color 0.25s;
+// }
+// button:hover {
+//   border-color: #646cff;
+// }
+// button:focus,
+// button:focus-visible {
+//   outline: 4px auto -webkit-focus-ring-color;
+// }
+//   div, a, button, li {
+//     display: flex;
+//     flex-direction: column;
+//     box-sizing: border-box;
+//     :hover {
+//   color: #535bf2;
+// }
+//   }
+
+// `
+const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%;
+    font-size: 16px;
+  }
+  #root{
+      position: relative;
+      min-height: 100vh;
+  }
+
+  body {
+    position: relative;
+   
+    height: 100%;
+    position: relative;
+  }
+
+  body, textarea, input, button {
+    line-height: 1;
+  }
+
+  body, div, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  button, a {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    :focus {
+      outline: none;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  div, a, button, li {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  // fix style: coinbase modal
+  .-cbwsdk-css-reset {
+    .-cbwsdk-extension-dialog-box-top-install-region {
+      button {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+    .-cbwsdk-snackbar-instance {
+      width: 100%;
+    }
+  }
+`
+
+export { GlobalStyle }

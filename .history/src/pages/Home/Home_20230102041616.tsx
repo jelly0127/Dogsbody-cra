@@ -1,0 +1,55 @@
+import reactLogo from '../../assets/react.svg'
+import { useSelector, useDispatch } from 'react-redux'
+import {
+  decrement,
+  increment,
+  incrementByAmount
+} from '../../redux/counterSlice'
+
+import { Link } from 'react-router-dom'
+export default function Home() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const count = useSelector((state: any) => state.counter.value)
+  const dispatch = useDispatch()
+  return (
+    <div className="App">
+      <h1>Vite + React</h1>
+
+      <h2>Jelly</h2>
+      {/* <img src={userIcon} alt="" /> */}
+      <br />
+      <h3>router</h3>
+
+      <p>Click jump to main page</p>
+      <Link to={'main'}>Main</Link>
+      <p>Click jump to history page</p>
+      <Link to={'History'}>History</Link>
+
+      <div>
+        <br />
+        <h3>redux</h3>
+        <div>
+          <button
+            aria-label="Increment value"
+            onClick={() => dispatch(increment())}
+          >
+            Increment
+          </button>
+          <p>{count}</p>
+          <button
+            aria-label="Decrement value"
+            onClick={() => dispatch(decrement())}
+          >
+            Decrement
+          </button>
+          <button
+            aria-label="incrementByAmount value"
+            onClick={() => dispatch(incrementByAmount(6))}
+          >
+            incrementByAmount
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
