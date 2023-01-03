@@ -52,11 +52,7 @@ const CommunityLinkGroup: React.FC = () => {
   return (
     <Wrapper>
       {imgArray.map((item) => (
-        <img
-          src={item.darkICon}
-          onClick={() => window.open(item.url)}
-          key={item.url + item.icon}
-        />
+        <img src={item.darkICon} onClick={() => window.open(item.url)} key={item.url + item.icon} />
       ))}
     </Wrapper>
   )

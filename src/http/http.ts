@@ -157,9 +157,7 @@ export default function (fecth: any, url: string, param: {} | undefined) {
 }
 
 //失败提示
-const msg = (err: {
-  response: { status: any; data: { error: { details: any } } }
-}) => {
+const msg = (err: { response: { status: any; data: { error: { details: any } } } }) => {
   if (err && err.response) {
     switch (err.response.status) {
       case 400:

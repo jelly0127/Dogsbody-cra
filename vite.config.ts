@@ -28,10 +28,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
           // 加载自己的 less 变量
           preprocessorOptions: {
             less: {
-              additionalData: `@import "${path.resolve(
-                __dirname,
-                'src/theme.module.less'
-              )}";`,
+              additionalData: `@import "${path.resolve(__dirname, 'src/theme.module.less')}";`,
               javascriptEnabled: true
             }
           }

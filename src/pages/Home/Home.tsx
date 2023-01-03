@@ -105,13 +105,11 @@ export default function Home() {
 
       <div className="second_text">
         <div className="second_text_titleBox">
-          <h4 className={H > 80 ? 'animate__animated  animate__fadeInUp' : ''}>
-            This is TEST
-          </h4>
+          <h4 className={H > 80 ? 'animate__animated  animate__fadeInUp' : ''}>This is TEST</h4>
           <p className={H > 150 ? 'animate__animated  animate__fadeInUp' : ''}>
-            In the world of WEB3, AIGIRL will generate 3D intelligent avatars
-            according to your ideas, create for you, draw for you, chat with
-            you, play games with you and can perform activities on your behalf.
+            In the world of WEB3, AIGIRL will generate 3D intelligent avatars according to your
+            ideas, create for you, draw for you, chat with you, play games with you and can perform
+            activities on your behalf.
           </p>
           <img
             className={H > 300 ? 'animate__animated  animate__fadeInUp' : ''}
@@ -129,18 +127,11 @@ export default function Home() {
         </div>
         <div className="third_text">
           <div className="third_text_titleBox">
-            <h4
-              className={H > 941 ? 'animate__animated  animate__fadeInUp' : ''}
-            >
-              This is TEST
-            </h4>
-            <p
-              className={H > 1024 ? 'animate__animated  animate__fadeInUp' : ''}
-            >
-              In the world of WEB3, AIGIRL will generate 3D intelligent avatars
-              according to your ideas, create for you, draw for you, chat with
-              you, play games with you and can perform activities on your
-              behalf.
+            <h4 className={H > 941 ? 'animate__animated  animate__fadeInUp' : ''}>This is TEST</h4>
+            <p className={H > 1024 ? 'animate__animated  animate__fadeInUp' : ''}>
+              In the world of WEB3, AIGIRL will generate 3D intelligent avatars according to your
+              ideas, create for you, draw for you, chat with you, play games with you and can
+              perform activities on your behalf.
             </p>
             <img
               className={H > 1185 ? 'animate__animated  animate__fadeInUp' : ''}
@@ -151,26 +142,16 @@ export default function Home() {
         </div>
 
         <div className="title">
-          <div
-            className={H > 1560 ? 'animate__animated  animate__fadeInUp' : ''}
-          >
-            TEST TITLE
-          </div>
+          <div className={H > 1560 ? 'animate__animated  animate__fadeInUp' : ''}>TEST TITLE</div>
         </div>
         <div className="third_text">
           <div className="third_text_titleBox">
-            <h4
-              className={H > 1680 ? 'animate__animated  animate__fadeInUp' : ''}
-            >
-              This is TEST
-            </h4>
-            <p
-              className={H > 1740 ? 'animate__animated  animate__fadeInUp' : ''}
-            >
-              As owners of our own AIGIRL, we can manage it anywhere online. A
-              blockchain protocol built for AIGIRL creates a decentralized
-              platform where AIGIRL are stored, and interacts with decentralized
-              applications meant for AIGIRL-centric uses in everyday life.
+            <h4 className={H > 1680 ? 'animate__animated  animate__fadeInUp' : ''}>This is TEST</h4>
+            <p className={H > 1740 ? 'animate__animated  animate__fadeInUp' : ''}>
+              As owners of our own AIGIRL, we can manage it anywhere online. A blockchain protocol
+              built for AIGIRL creates a decentralized platform where AIGIRL are stored, and
+              interacts with decentralized applications meant for AIGIRL-centric uses in everyday
+              life.
             </p>
             <img
               className={H > 1933 ? 'animate__animated  animate__fadeInUp' : ''}
@@ -191,21 +172,11 @@ export default function Home() {
         </p>
         <br />
         <p
-          className={
-            H > 2558
-              ? 'small_title animate__animated  animate__fadeInUp'
-              : 'small_title'
-          }
+          className={H > 2558 ? 'small_title animate__animated  animate__fadeInUp' : 'small_title'}
         >
           © 2022 AIGIRL. Design & Developed
         </p>
-        <div
-          className={
-            H > 2590
-              ? 'link_box animate__animated  animate__fadeInUp'
-              : 'link_box'
-          }
-        >
+        <div className={H > 2590 ? 'link_box animate__animated  animate__fadeInUp' : 'link_box'}>
           <CommunityLinkGroup />
         </div>
       </div>

@@ -1,10 +1,6 @@
 import reactLogo from '../../assets/react.svg'
 import { useSelector, useDispatch } from 'react-redux'
-import {
-  decrement,
-  increment,
-  incrementByAmount
-} from '../../redux/counterSlice'
+import { decrement, increment, incrementByAmount } from '../../redux/counterSlice'
 
 import '../../App.less'
 import { Link } from 'react-router-dom'
@@ -39,16 +35,10 @@ export default function Test() {
         <br />
         <h3>redux</h3>
         <div className="test_box_list">
-          <button
-            aria-label="Increment value"
-            onClick={() => dispatch(increment())}
-          >
+          <button aria-label="Increment value" onClick={() => dispatch(increment())}>
             Increment
           </button>
-          <button
-            aria-label="Decrement value"
-            onClick={() => dispatch(decrement())}
-          >
+          <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
             Decrement
           </button>
           <button

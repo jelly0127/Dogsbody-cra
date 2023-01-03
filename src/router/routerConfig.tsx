@@ -9,9 +9,7 @@ const Home = React.lazy(() => import('../pages/Home/Home'))
 const Ido = React.lazy(() => import('../pages/Ido/Ido'))
 
 //懒加载格式定义
-const lazyFactory = (
-  LazyComponent: React.LazyExoticComponent<React.FC<{}>>
-) => {
+const lazyFactory = (LazyComponent: React.LazyExoticComponent<React.FC<{}>>) => {
   return (
     <React.Suspense fallback={null}>
       <LazyComponent />

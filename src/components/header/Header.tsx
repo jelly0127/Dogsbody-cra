@@ -19,11 +19,7 @@ const HeaderWrapper = styled.div`
   width: 100%;
   height: auto;
   padding: 0.15rem 0.31rem;
-  background: linear-gradient(
-    113.54deg,
-    rgba(103, 58, 194, 1) 2.91%,
-    rgba(122, 74, 221, 1) 25.92%
-  );
+  background: linear-gradient(113.54deg, rgba(103, 58, 194, 1) 2.91%, rgba(122, 74, 221, 1) 25.92%);
 `
 
 const H5Logo = styled.img`

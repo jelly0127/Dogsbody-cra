@@ -53,9 +53,7 @@ export default function PopupFoot() {
         </div>
         <div className="box_text animate__animated animate__backInUp">
           <p className="box_text_title">TEST @2023</p>
-          <p className="box_text_init">
-            Decentralized platform for smart avatars
-          </p>
+          <p className="box_text_init">Decentralized platform for smart avatars</p>
         </div>
       </div>
     </RootBox>
