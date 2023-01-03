@@ -8,14 +8,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
 
   return {
     base: env.VITE_RES_URL,
-    resolve: {
-      alias: [
-        {
-          find: 'stream',
-          replacement: `stream-browserify`
-        }
-      ]
-    },
+    resolve: { alias: { stream: 'stream-browserify' } },
     plugins: [react(), reactRefresh()],
 
     css: {

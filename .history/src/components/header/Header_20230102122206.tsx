@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import type { MenuProps } from 'antd'
 import { Menu } from 'antd'
 
+import Wallet from '../wallet/Wallet'
 import Jelly from '../../images/jelly.jpg'
 import './Header.less'
 import styled from 'styled-components'
@@ -20,7 +21,7 @@ const items: MenuProps['items'] = [
   }
 ]
 
-export default function Header() {
+export default function Hearder() {
   const [current, setCurrent] = useState('home')
 
   const onClick: MenuProps['onClick'] = (e) => {
@@ -40,6 +41,8 @@ export default function Header() {
         mode="horizontal"
         items={items}
       />
+
+      <Wallet />
     </div>
   )
 }

@@ -14,12 +14,7 @@
   "dependencies": {
     "@craco/craco": "^7.0.0",
     "@reduxjs/toolkit": "^1.9.1",
-    "@web3-react/core": "^6.1.9",
-    "@web3-react/injected-connector": "^6.0.7",
-    "ahooks": "^3.7.4",
-    "animate.css": "^4.1.1",
     "antd": "^5.0.5",
-    "antd-mobile": "^5.27.0",
     "axios": "^1.2.1",
     "dayjs": "^1.11.7",
     "ethereumjs-abi": "^0.6.8",
@@ -32,7 +27,6 @@
     "react-router": "^6.4.5",
     "react-router-dom": "^6.4.5",
     "styled-components": "^5.3.6",
-    "swiper": "^8.4.5",
     "use-immer": "^0.8.1"
   },
   "devDependencies": {

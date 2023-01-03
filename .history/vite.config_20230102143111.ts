@@ -5,17 +5,13 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 
 export default defineConfig(({ mode }: ConfigEnv) => {
   const env = loadEnv(mode, __dirname)
-
+  {
+    {
+      ;('stream-browserify')
+    }
+  }
   return {
     base: env.VITE_RES_URL,
-    resolve: {
-      alias: [
-        {
-          find: 'stream',
-          replacement: `stream-browserify`
-        }
-      ]
-    },
     plugins: [react(), reactRefresh()],
 
     css: {

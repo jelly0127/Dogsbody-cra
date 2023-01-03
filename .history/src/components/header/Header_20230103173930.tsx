@@ -20,7 +20,7 @@ const items: MenuProps['items'] = [
   }
 ]
 
-export default function Header() {
+export default function Hearder() {
   const [current, setCurrent] = useState('home')
 
   const onClick: MenuProps['onClick'] = (e) => {
