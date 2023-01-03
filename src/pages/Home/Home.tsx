@@ -12,9 +12,10 @@ const HomeRoot = styled.div`
   width: 100%;
   color: #ffffff;
   .first_text {
-    padding: 0 15px 20px 15px;
+    padding: 0 15px 40px 15px;
     font-size: 22px;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -74,10 +75,17 @@ const HomeRoot = styled.div`
   }
   .footer_box {
     width: 100%;
-    height: 360px;
+    height: auto;
     padding: 40px 20px;
     font-size: 16px;
     line-height: 10px;
+    background: linear-gradient(
+        113.54deg,
+        rgba(103, 58, 194, 0.3) 4.91%,
+        rgba(122, 74, 221, 0.398) 10.92%,
+        rgba(209, 103, 255, 0.03) 50.76%
+      ),
+      linear-gradient(160.75deg, #7a4add 1.37%, #d57bff 98.29%);
     p {
       margin-top: 10px;
     }

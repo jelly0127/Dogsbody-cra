@@ -16,6 +16,9 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         }
       ]
     },
+    server: {
+      host: '0.0.0.0'
+    },
     plugins: [react(), reactRefresh()],
 
     css: {

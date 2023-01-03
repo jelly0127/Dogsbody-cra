@@ -62,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     font-size: 16px;
     padding: 0;
+    padding-top: 36px;
 
   }
   #root{
