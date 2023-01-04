@@ -175,16 +175,16 @@ export default function Home() {
           src="https://www.aigirl.shop/assets/images/big-logo.png"
           alt=""
         />
-        <p className={H > 2530 ? 'animate__animated  animate__fadeInUp' : ''}>
+        <p className={H > 2430 ? 'animate__animated  animate__fadeInUp' : ''}>
           Let your creation have infinite possibilities
         </p>
         <br />
         <p
-          className={H > 2558 ? 'small_title animate__animated  animate__fadeInUp' : 'small_title'}
+          className={H > 2430 ? 'small_title animate__animated  animate__fadeInUp' : 'small_title'}
         >
           © 2022 AIGIRL. Design & Developed
         </p>
-        <div className={H > 2590 ? 'link_box animate__animated  animate__fadeInUp' : 'link_box'}>
+        <div className={H > 2430 ? 'link_box animate__animated  animate__fadeInUp' : 'link_box'}>
           <CommunityLinkGroup />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import routes from './router/routerConfig'
 import { MyContext } from './MyContext'
@@ -18,10 +18,13 @@ function App() {
   const isDesktop = useSelector((state: any) => state.counter.isDesktop)
 
   console.log('isDesktop', isDesktop)
-  dispatch(updateDesktop(size.isDesktop))
+  useEffect(() => {
+    dispatch(updateDesktop(size.isDesktop))
+  }, [size.isDesktop])
   const getTheme = useCallback(() => {
     return { ...defaultTheme, isDesktop }
   }, [isDesktop])
+
   return (
     <MyContext.Provider value={{ Name, setName }}>
       <ThemeProvider theme={getTheme()}>

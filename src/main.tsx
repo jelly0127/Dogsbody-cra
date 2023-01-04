@@ -4,7 +4,8 @@ import App from './App'
 import store from './redux/store'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Routes } from 'react-router-dom'
-
+// import VConsole from 'vconsole'
+// const vConsole = new VConsole()
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
