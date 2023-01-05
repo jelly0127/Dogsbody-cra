@@ -8,7 +8,7 @@ import { useState } from 'react'
 import ItemList from './ItemList/ItemList'
 import PopupFoot from './PopupFoot/PopupFoot'
 import 'animate.css'
-
+import Wallet from '../Wallet/Wallet'
 const HeaderWrapper = styled.div`
   ${flexCenter};
   flex-direction: row;
@@ -33,6 +33,12 @@ const MoreLogo = styled.img`
   height: auto;
   content: url(${MORE_LOGO});
 `
+const RightBox = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+`
 const IPopup = styled(Popup)`
   .adm-popup-body {
     background-color: rgba(103, 58, 194, 1) !important;
@@ -51,12 +57,15 @@ const Header: React.FC = () => {
     return (
       <HeaderWrapper>
         <Link to="/">{<H5Logo />}</Link>
+        <RightBox>
+          <MoreLogo
+            onClick={() => {
+              setVisible4(!visible4)
+            }}
+          />
+          <Wallet />
+        </RightBox>
 
-        <MoreLogo
-          onClick={() => {
-            setVisible4(!visible4)
-          }}
-        />
         <IPopup
           visible={visible4}
           closeOnMaskClick
@@ -72,8 +81,6 @@ const Header: React.FC = () => {
             </TextBox>
           }
         </IPopup>
-
-        <></>
       </HeaderWrapper>
     )
   }

@@ -11,11 +11,19 @@ const HomeRoot = styled.div`
   height: auto;
   width: 100%;
   color: #ffffff;
+  background: linear-gradient(
+      113.54deg,
+      rgba(103, 58, 194, 0.5) 10.91%,
+      rgba(122, 74, 221, 0.398) 25.92%,
+      rgba(209, 103, 255, 0.03) 55.76%
+    ),
+    linear-gradient(160.75deg, #7a4add 41.37%, #d57bff 98.29%);
   .first_text {
     padding: 0 15px 40px 15px;
     font-size: 22px;
-    height: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+    height: 100vh;
+
     width: 100%;
     display: flex;
     flex-direction: column-reverse;

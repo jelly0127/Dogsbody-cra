@@ -73,8 +73,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: linear-gradient(113.54deg, rgba(103, 58, 194, 0.5) 10.91%, rgba(122, 74, 221, 0.398) 25.92%, rgba(209, 103, 255, 0.03) 55.76%),
-    linear-gradient(160.75deg, #7A4ADD 41.37%, #D57BFF 98.29%);
+   
   .adm-mask{
     opacity: 0.3 !important;
   }
