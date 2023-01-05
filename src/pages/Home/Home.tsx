@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import 'animate.css'
-import useWindowTop from '../../hooks/topDistance'
+import useWindowTop from '@/hooks/topDistance'
 import CommunityLinkGroup from '../../components/CommunityLinkGroup'
 const HomeRoot = styled.div`
   display: flex;
