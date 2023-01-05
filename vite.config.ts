@@ -13,7 +13,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         {
           find: 'stream',
           replacement: `stream-browserify`
-        }
+        },
+        { find: '@', replacement: path.join(__dirname, 'src') }
       ]
     },
     server: {
