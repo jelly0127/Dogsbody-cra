@@ -1,5 +1,0 @@
-# .env.production
-ENV= 'production'
-
-#base api
-VITE_APP_BASE_API = 'http://vitetest.com'
